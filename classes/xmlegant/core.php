@@ -8,7 +8,7 @@
  * @license BSD http://creativecommons.org/licenses/BSD/
  */
 
-class XMLegant_Core implements ArrayAccess {
+abstract class XMLegant_Core implements ArrayAccess {
 
     protected $name = NULL;
     protected $text = FALSE;
@@ -457,7 +457,6 @@ class XMLegant_Core implements ArrayAccess {
     }
 
 	/**
-	 * Returns last child name
 	 *
 	 * @param string $name
 	 * @return string
@@ -492,7 +491,7 @@ class XMLegant_Core implements ArrayAccess {
     }
 
 	/**
-	 * Cloning an object
+	 * Object Cloning
 	 */
     public function __clone()
     {
@@ -507,8 +506,6 @@ class XMLegant_Core implements ArrayAccess {
     }
 
     /**
-	 *
-	 *
 	 * @return string
 	 */
     public function __toString()
