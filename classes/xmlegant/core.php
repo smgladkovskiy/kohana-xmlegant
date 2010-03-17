@@ -107,7 +107,7 @@ abstract class XMLegant_Core implements ArrayAccess {
 	 * @param integer $offset
 	 * @return boolean
 	 */
-    public function offset_exists($offset)
+    public function offsetExists($offset)
     {
         if(empty($offset))
 		{
@@ -129,7 +129,7 @@ abstract class XMLegant_Core implements ArrayAccess {
 	 * @param integer $offset
 	 * @return boolean
 	 */
-    public function get_offset($offset)
+    public function offsetGet($offset)
     {
         if(empty($offset))
 		{
