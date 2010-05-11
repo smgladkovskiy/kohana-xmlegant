@@ -285,7 +285,7 @@ abstract class XMLegant_Core implements ArrayAccess {
 		{
             $child->attrs = $value;
         }
-		elseif(is_a($value, 'XMLegant_Core'))
+		elseif($value instanceof XMLegant_Core)
 		{
             // Each XMLegant object has a "dummy" top node. When adding
             // an XMLegant object as a child node, we reach through this wrapper
